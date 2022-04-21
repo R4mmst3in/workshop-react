@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Spacer, Tag, Button, Icon } from "@chakra-ui/react";
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import * as API from "../services/launches.js";
 
 export function LaunchDetails() {
@@ -32,6 +32,12 @@ export function LaunchDetails() {
                 {launch.launch_success ? "Success" : "Failure"}
             </Tag>
           </Flex>
+          <Box>
+            Rocket: 
+              <Link to ="/rockets/${launch.rocket?.rocket_id}">
+                {launch.rocket?.rocket_name}
+              </Link>
+          </Box>
         </>
       )}
     </Box>

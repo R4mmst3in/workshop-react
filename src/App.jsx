@@ -11,6 +11,7 @@ export function App() {
       <Routes>
         <Route path="/" element ={<LaunchList/>} />
         <Route path="launch/:launchId" element={<LaunchDetails/>} />
+        <Route path="/rockets/:rocket_id}" element={<RocketDetails/>} />
       </Routes>
     </>
   );
