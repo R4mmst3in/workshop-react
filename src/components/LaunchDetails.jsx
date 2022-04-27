@@ -34,7 +34,7 @@ export function LaunchDetails() {
           </Flex>
           <Box>
             Rocket: 
-              <Link to ="/rockets/${launch.rocket?.rocket_id}">
+              <Link to ="/rocket/${launch.rocket.rocket_id}">
                 {launch.rocket?.rocket_name}
               </Link>
           </Box>
