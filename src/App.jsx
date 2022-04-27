@@ -1,3 +1,4 @@
+//v0.0.1
 import { Image } from "@chakra-ui/react";
 import { Routes, Route, Link } from "react-router-dom";
 import logo from "./assets/index.png";
